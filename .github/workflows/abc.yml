@@ -17,4 +17,6 @@ jobs:
           lsb_release -a
           pwd
           ls
+          cd zlib
+          ./configure
 
