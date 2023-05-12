@@ -13,8 +13,9 @@ jobs:
         
       - name: Check Environment
         run: |
-          uname -a
           lsb_release -a
+          uname -a
+          uptime
           pwd
           whoami
           ls
