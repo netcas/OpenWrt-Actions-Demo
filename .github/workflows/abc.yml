@@ -26,5 +26,5 @@ jobs:
       - name: Compile
         run: |
           pwd
-          make
+          ls
           
