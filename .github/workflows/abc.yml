@@ -11,10 +11,9 @@ jobs:
           ref: v1.2.12
         
       - name: my-step
-        run: echo "Hello World!"
-      - name: uname
-        run: uname -a
-      - name: pwd
-        run: pwd
-      - name: ls
-        run: ls
+        run: 
+          uname -a
+          lsb_release -a
+          pwd
+          ls
+
