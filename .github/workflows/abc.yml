@@ -22,4 +22,6 @@ jobs:
         run: |
           cd zlib
           ./configure
+      - name: Compile
+        run: make
           
