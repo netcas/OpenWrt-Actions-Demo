@@ -11,12 +11,15 @@ jobs:
           ref: v1.2.12
           path: zlib
         
-      - name: my-step
+      - name: Check Environment
         run: |
           uname -a
           lsb_release -a
           pwd
+          whoami
           ls
+      - name: Configure
+        run: |
           cd zlib
           ./configure
-
+          
