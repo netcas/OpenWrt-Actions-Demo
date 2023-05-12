@@ -1,4 +1,4 @@
-name: hello-world
+name: zlib-build
 on: push
 jobs:
   my-job:
@@ -25,6 +25,6 @@ jobs:
           ./configure
       - name: Compile
         run: |
-          pwd
-          ls
+          cd zlib
+          make
           
