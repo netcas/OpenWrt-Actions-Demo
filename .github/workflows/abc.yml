@@ -9,9 +9,10 @@ jobs:
         with:
           repository: madler/zlib
           ref: v1.2.12
+          path: zlib
         
       - name: my-step
-        run: 
+        run: |
           uname -a
           lsb_release -a
           pwd
