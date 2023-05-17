@@ -1,5 +1,12 @@
 name: zlib-build
-on: push
+on:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'ABC'
+        required: false
+        default: 'false'
+      
 jobs:
   my-job:
     runs-on: ubuntu-latest
