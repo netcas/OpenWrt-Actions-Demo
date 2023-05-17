@@ -1,5 +1,6 @@
 name: zlib-build
 on:
+  push:
   workflow_dispatch:
     inputs:
       ssh:
