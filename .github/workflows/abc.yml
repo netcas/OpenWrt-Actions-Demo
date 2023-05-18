@@ -22,6 +22,7 @@ jobs:
       - name: Check Environment
         run: |
           export
+          pwd
           lsb_release -a
           uname -a
           uptime
@@ -32,12 +33,14 @@ jobs:
       - name: Configure
         run: |
           export
+          pwd
           cd zlib
           ./configure
           
       - name: Compile
         run: |
           export
+          pwd
           cd zlib
           make
           
