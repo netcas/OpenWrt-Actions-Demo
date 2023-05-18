@@ -23,23 +23,20 @@ jobs:
         run: |
           export
           pwd
+          whoami
           lsb_release -a
           uname -a
           uptime
-          pwd
-          whoami
           ls
           
       - name: Configure
         run: |
-          export
           pwd
           cd zlib
           ./configure
           
       - name: Compile
         run: |
-          export
           pwd
           cd zlib
           make
