@@ -21,19 +21,23 @@ jobs:
         
       - name: Check Environment
         run: |
+          export
           lsb_release -a
           uname -a
           uptime
           pwd
           whoami
           ls
-          export
+          
       - name: Configure
         run: |
+          export
           cd zlib
           ./configure
+          
       - name: Compile
         run: |
+          export
           cd zlib
           make
           
