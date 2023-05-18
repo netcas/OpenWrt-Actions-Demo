@@ -21,7 +21,7 @@ jobs:
         run: |
           pwd
           ls
-          git clone --depth 1 --branch v1.2.12 https://github.com/madler/zlib.git zlib-1.2.12
+          git clone --depth 1 --branch 1.2.12 https://github.com/madler/zlib.git zlib-1.2.12
           ls
         
       - name: Check Environment
@@ -37,12 +37,12 @@ jobs:
       - name: Configure
         run: |
           pwd
-          cd zlib
+          cd zlib-1.2.12
           ./configure
           
       - name: Compile
         run: |
           pwd
-          cd zlib
+          cd zlib-1.2.12
           make
           
