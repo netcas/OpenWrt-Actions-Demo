@@ -9,11 +9,13 @@ on:
         default: 'false'
       
 jobs:
-  my-job:
+  zlib-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
         uses: actions/checkout@v3
+        with:
+          path: xyz
           
       - name: Checkout zlib
         run: |
